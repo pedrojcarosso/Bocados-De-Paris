@@ -107,6 +107,30 @@
   margin-top: 50px;
 }
 
+.cajitas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.caja-form,
+.caja-deli {
+  width: 35%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .cajitas {
+    flex-direction: column;
+    align-items: center; /* opcional para centrar verticalmente */
+  }
+  .caja-form,
+  .caja-deli {
+    width: 80%; /* opcional, para que se adapten mejor en móvil */
+  }
+}
 .imagen-servicios {
   height: 200px;
   width: auto;
