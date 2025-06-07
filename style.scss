@@ -1,0 +1,144 @@
+@import "./estilos/ubicacion";
+@import "./estilos/quienes-somos";
+@import "./estilos/index";
+@import "./estilos/contacto";
+@import "./estilos/servicios";
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    main {
+    flex: 1;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    margin-left: 20px;
+
+    &:hover {
+    filter: brightness(0) saturate(100%) invert(47%) sepia(77%) saturate(540%) hue-rotate(1deg) brightness(93%) contrast(92%);
+    }
+
+    @media (max-width: 768px) {
+    display: none;
+    }
+}   
+
+.logo-movile {
+    width: 70px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 769px) {
+    display: none;
+    }
+}
+
+.links {
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 60px;
+        margin: 15px;
+        padding: 0;
+    }
+
+    a {
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+    &:hover {
+        color: #c2820c;
+        transform: scale(1.5);
+        transition: all 0.3s ease;
+        text-decoration: underline;
+    }
+    }
+}
+
+.centrados {
+    text-align: center;
+
+    .titulos {
+    font-size: 60px;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    @media (max-width: 768px) {
+        display: none;
+    }
+    }
+}
+
+
+
+footer {
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+
+    img {
+    width: 30px;
+    height: auto;
+    }
+
+    @media (max-width: 768px) {
+    padding: 5px 0;
+    margin-top: 10px;
+    }
+}
+
+.footer {
+    img {
+    width: 30px;
+    height: auto;
+    }
+
+    @media (max-width: 768px) {
+    p {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 5px 0;
+    }
+    }
+}
+
+.footer-movile {
+    div {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+    }
+
+    img {
+    width: 18px;
+    }
+
+    @media (max-width: 768px) {
+    p {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 5px 0;
+    }
+    }
+}

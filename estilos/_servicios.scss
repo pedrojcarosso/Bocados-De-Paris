@@ -1,0 +1,36 @@
+.imagen-servicios {
+    height: 200px;
+    width: auto;
+}
+
+.form-cont {
+    h3 {
+    display: flex;
+    }
+}
+
+.cajitas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.catering-caja,
+.delivery-caja {
+    width: 35%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .cajitas {
+        flex-direction: column;
+        align-items: center; /* opcional para centrar verticalmente */
+    }
+
+    .catering-caja,
+    .delivery-caja {
+        width: 80%; /* opcional, para que se adapten mejor en móvil */
+    }
+}
