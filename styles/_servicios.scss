@@ -34,3 +34,15 @@
         width: 80%; 
     }
 }
+
+.link-contacto {
+    text-decoration: none;
+    color: black;
+    
+    &:hover {
+        color: #c2820c;
+        transform: scale(1.5);
+        transition: all 0.3s ease;
+        text-decoration: underline;
+    }
+}

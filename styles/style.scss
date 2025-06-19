@@ -1,8 +1,8 @@
-@import "./estilos/ubicacion";
-@import "./estilos/quienes-somos";
-@import "./estilos/index";
-@import "./estilos/contacto";
-@import "./estilos/servicios";
+@import "ubicacion";
+@import "quienes-somos";
+@import "index";
+@import "contacto";
+@import "servicios";
 
 html, body {
     height: 100%;
@@ -100,6 +100,10 @@ footer {
     img {
     width: 30px;
     height: auto;
+
+    &:hover {
+    filter: brightness(0) saturate(100%) invert(47%) sepia(77%) saturate(540%) hue-rotate(1deg) brightness(93%) contrast(92%);
+    }
     }
 
     @media (max-width: 768px) {
@@ -123,7 +127,7 @@ footer {
     }
 }
 
-.footer-movile {
+/*.footer-movile {
     div {
     justify-content: center;
     gap: 10px;
@@ -141,4 +145,4 @@ footer {
     margin: 5px 0;
     }
     }
-}
+}*/
