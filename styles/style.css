@@ -104,6 +104,9 @@
   .galeria .overlay {
     position: absolute;
   }
+  p {
+    display: none;
+  }
 }
 .carousel-control-prev {
   padding-left: 100px;
